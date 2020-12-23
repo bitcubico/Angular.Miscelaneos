@@ -1,0 +1,24 @@
+<div [ngClass]="alert" class="alert" role="alert">
+    Documentación de <a href="https://angular.io/api/common/NgClass" class="alert-link" target="_blanc">NgClass</a>
+</div>
+<div class="btn-group" role="group" aria-label="Basic outlined example">
+    <button type="button" class="btn btn-outline-success" (click)="alert = 'alert-success'">
+        Success
+    </button>
+    <button type="button" class="btn btn-outline-danger" (click)="alert = 'alert-danger'">
+        Danger
+    </button>
+    <button type="button" class="btn btn-outline-info" (click)="alert = 'alert-info'">
+        Info
+    </button>
+</div>
+<hr>
+<div>
+    <h4>Proceso asincrono</h4>
+
+    <button type="button" class="btn btn-primary" (click)="guardar()" [disabled]='loading'>
+        <i [ngClass]="{'fa-save': !loading, 'fa-sync fa-spin': loading}" class="fas"></i> 
+        <span *ngIf="!loading"> Guadar</span>
+        <span *ngIf="loading"> Guardando...</span>
+    </button>
+</div>
