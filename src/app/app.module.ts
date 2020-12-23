@@ -7,6 +7,7 @@ import { CssParticularComponent } from './components/css-particular/css-particul
 import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { ResaltadoDirective } from './directives/resaltado.directive';
 import { DirectivasComponent } from './components/directivas/directivas.component';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DirectivasComponent } from './components/directivas/directivas.componen
     CssParticularComponent,
     NgClassComponent,
     ResaltadoDirective,
-    DirectivasComponent
+    DirectivasComponent,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule

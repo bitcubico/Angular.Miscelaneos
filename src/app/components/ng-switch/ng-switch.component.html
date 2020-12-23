@@ -1,0 +1,31 @@
+<div [ngSwitch]="alert">
+    <div *ngSwitchCase="'info'" class="alert alert-info" role="alert">
+        Documentación de <a href="https://angular.io/api/common/NgSwitchCase" class="alert-link" target="_blanc">NgSwitch</a>
+    </div>
+    <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+        Documentación de <a href="https://angular.io/api/common/NgSwitchCase" class="alert-link" target="_blanc">NgSwitch</a>
+    </div>
+    <div *ngSwitchCase="'warning'" class="alert alert-warning" role="alert">
+        Documentación de <a href="https://angular.io/api/common/NgSwitchCase" class="alert-link" target="_blanc">NgSwitch</a>
+    </div>
+    <div *ngSwitchCase="'danger'" class="alert alert-danger" role="alert">
+        Documentación de <a href="https://angular.io/api/common/NgSwitchCase" class="alert-link" target="_blanc">NgSwitch</a>
+    </div>
+    <div *ngSwitchDefaul class="alert alert-info" role="alert">
+        Documentación de <a href="https://angular.io/api/common/NgSwitchCase" class="alert-link" target="_blanc">NgSwitch</a>
+    </div>
+</div>
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-outline-success" (click)="alert = 'success'">
+        Success
+    </button>
+    <button type="button" class="btn btn-outline-warning" (click)="alert = 'warning'">
+        Warning
+    </button>
+    <button type="button" class="btn btn-outline-danger" (click)="alert = 'danger'">
+        Danger
+    </button>
+    <button type="button" class="btn btn-outline-info" (click)="alert = 'info'">
+        Info
+    </button>
+</div>
